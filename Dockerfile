@@ -2,12 +2,12 @@
 # Optimisation performed by wejrox
 
 #
-# Cosmic JAR creation stage
+# SyrupStory JAR creation stage
 #
 FROM maven:3.8.1-openjdk-16 AS jar
 
 # Build in a separated location which won't have permissions issues.
-WORKDIR /opt/cosmic
+WORKDIR /opt/syrupstory
 # Any changes to the pom will affect the entire build, so it should be copied first.
 COPY pom.xml ./pom.xml
 # Grab all the dependencies listed in the pom early, since it prevents changes to source code from requiring a complete re-download.
@@ -28,7 +28,7 @@ WORKDIR /opt/server
 # Copy the wizet files first since they're so big and won't change often.
 COPY wz ./wz
 # Copy the JAR we build earlier.
-COPY --from=jar /opt/cosmic/target/Cosmic.jar ./Server.jar
+COPY --from=jar /opt/syrupstory/target/syrupstory.jar ./Server.jar
 # Scripts are sourced on server startup, so you can mount over them for quicker redeploy.
 COPY scripts ./scripts/
 # Config is read on server startup, so you can mount over it for quicker redeploy.

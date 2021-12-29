@@ -1,7 +1,5 @@
-﻿# Cosmic - MapleStory v83
-Cosmic launched as a successor to HeavenMS on March 21st 2021.
-
-This document is currently being worked on, so it may not be fully accurate.
+﻿# SyrupTale - MapleStory v83
+SyrupTale is aiming to be a complete restructuring/rebalancing of the game, done mainly through WZ edits unless a real developer shows interest in this project.
 
 ## Beware
 
@@ -14,20 +12,38 @@ with no real changes is not recommended.
 
 ### Development information
 
-#### Status (updated 28/9/21)
+#### Status (updated Dec 28, 2021)
 
-Development is <span style="color:Orange">**on pause**</span>, but any submitted PRs will be reviewed.
+Updated files to reflect new project name, beginning of making todo list.
+
+#### Todo List
+
+	- Remove existing scrolls, and all references (quest rewards, shop content, etc) from game
+	- Create new, simplified set of scrolls, and add them to quests, shops and drops
+	- Rebalance weapons and armor to scale consistently with level
+	- Remove class, gender and trade restrictions from all equipment, with stat requirement based on main stat of original class restriction
+		-- Potentially add set bonuses if I can ever get it implemented
+	- Rebuild Drop Tables from scratch, reviewing each mob's drops and removing redunant/pointless/duplicate items
+	- Completely strip pointless items from game files, adjust quest rewards/requests to use items that make sense or have multiple uses
+	- Give every item a value and a purpose, and remove drop restrictions (no more items that drop only if quest requires them!)
+	- Adjust stacksize on use/etc items, potions/mob items shouldn't take up multiple inventory slots for no reason
+	- Try to make cash version of all weapons/equipment, potentially move some equipment to be cash only since main differences between same level items will be cosmetic at this point
+	- Remove P2W items from Cash Shop entirely, make obtainable in game through shops or quests instead
+	- Rebalance skills for better progression
+	- If I can figure it out (likely would require forking HeavenClient and obtaining a real developer's interest in project?) adjust skill job requirements, and skill effects in general
+		-- Idea: Change base classes from Beginner/Noblesse/LEGEND to Melee/Magic/Ranged, or at least Physical/Magic/LEGEND if Aran can not be adjusted
+		-- Idea: If previous idea viable, remove job choices and instead make skills have prerequisites to define your subclass
+		-- Idea: If previous ideas not viable, but this one is, make Beginner/Noblesse jobs able to advance to any 1st job class, with ap gain/level cap of the starting job, scale jobs to max sp at 120 and adjust progression rewards from 120-200 in some way
+	- Add new story questlines starting from the beginning
+	- Adjust mob spawn locations/balance, add minibosses to more maps
+	- Create a Hub City type map with quests, NPC's and portals to other towns, along with boat/train/etc station similar to current version of game.
+	~~- Get new ADD meds to make this project actually possible~~
 
 #### Ways to contribute
 
 * Submit a Pull Request (fork -> commit -> PR)
 * Submit a bug report (add a new issue on GitHub, or post in `bug-report` on Discord)
-* Spread the word about Cosmic
-
-#### Community
-
-GitHub: https://github.com/P0nk/Cosmic  
-Discord: https://discord.gg/JU5aQapVZK
+* Spread the word about HeavenMS/Cosmic/SyrupTale and encourage (or join) developement!
 
 ---
 
@@ -145,10 +161,10 @@ The easiest way to set up your project is to clone the repository directly into 
 
 1. Install IntelliJ
 2. Create a new "Project from Version Control..."
-3. Enter the URL to this GitHub repository: "https://github.com/P0nk/Cosmic.git"
+3. Enter the URL to this GitHub repository: "https://github.com/DarkSirrush/SyrupTale.git"
 4. Click on "Clone". A new project will now be created with all the files from the repository.
 
-#### Setting up the database
+#### Setting up the database - To Be adjusted at a later date
 
 1. Install MySQL Server 8 and MySQL Workbench 8.  
 2. Using Workbench, create a new user with username "cosmic_server" and password "snailshell". 

@@ -1,4 +1,4 @@
----- Cosmic MySQL Database ----
+---- SyrupStory MySQL Database ----
 
 These SQL files must be executed IN ORDER to set up the database:
 	- 1-db_database.sql (Tables and some data)

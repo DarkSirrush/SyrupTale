@@ -1,4 +1,4 @@
 @echo off
-@title Cosmic
-java -Xmx2048m -Dwz-path= -jar target\Cosmic.jar
+@title SyrupStory
+java -Xmx2048m -Dwz-path= -jar target\SyrupStory.jar
 pause

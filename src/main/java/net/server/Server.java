@@ -826,7 +826,7 @@ public class Server {
 
     public void init() {
         Instant beforeInit = Instant.now();
-        log.info("Cosmic v{} starting up.", ServerConstants.VERSION);
+        log.info("SyrupStory v{} starting up.", ServerConstants.VERSION);
 
         if (YamlConfig.config.server.SHUTDOWNHOOK) {
             Runtime.getRuntime().addShutdownHook(new Thread(shutdown(false)));
@@ -907,7 +907,7 @@ public class Server {
 
         online = true;
         Duration initDuration = Duration.between(beforeInit, Instant.now());
-        log.info("Cosmic is now online after {} ms.", initDuration.toMillis());
+        log.info("SyrupStory is now online after {} ms.", initDuration.toMillis());
 
         OpcodeConstants.generateOpcodeNames();
         CommandsExecutor.getInstance();
